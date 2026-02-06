@@ -1,0 +1,16 @@
+@font-face {
+  font-family: HoneyBrown;
+  src: url(/fonts/Honey Brown.otf);
+}
+
+body{
+	margin: 50px;
+	background-image: url('/images/snail.jpg');
+	background-size: 2000px
+	background-repeat: no-repeat;
+}
+
+p {
+	font-family: HoneyBrown;
+	color:000000;
+}

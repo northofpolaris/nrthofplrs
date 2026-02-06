@@ -1,0 +1,53 @@
+---
+title: home ⋆｡°✩
+layout: main
+---
+
+{% assign recentPosts = 0 %}
+
+<div class = "homeLayout">
+	<div class = "main">
+		<h3 class = "recentHeader" >recent blogposts</h3>
+	
+		{% for post in collections.post reversed %}
+			{% if recentPosts < 5 %}
+			<details>
+				<summary class = "clickable2">
+					{{ post.data.title }} </br>
+					⋆｡°✩ posted {{ post.date | niceDate }} ✩°｡⋆
+				</summary>
+				<p>
+					{{content}}
+					{% excerpt post %}
+				</p>
+			</details>
+			</br>
+			{% assign recentPosts = recentPosts | plus:1 %}
+			{% endif %}
+		{% endfor %}
+
+		<i><a class = "clickable1" href = "/archive">see older posts</a></i>
+	</div>
+
+	<div class = "sidebarRight">
+		{% for sidebar in collections.currentlyXYZ %}
+			<div class = "currentlyX purple">
+				<div>
+					<h3 class = "headers"> {{sidebar.data.title}}: </h3>
+				</div>
+				<div>
+					<a target = "_blank" href = {{sidebar.data.site}}>
+						<img class = "currently" src = "{{sidebar.data.image}}" title = {{sidebar.data.description}}>
+					</a>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+
+	<div class = "sidebarLeft purple">
+		{% for image in collections.sidebar %}
+			<img src = {{image}} width = "200">
+		{% endfor %}
+	</div>
+</div>
+

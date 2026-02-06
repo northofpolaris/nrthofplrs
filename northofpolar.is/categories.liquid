@@ -1,0 +1,42 @@
+---
+pagination:
+  data: collections.categories
+  size: 1
+  alias: category
+permalink: "/categories/{{ category | slugify }}/index.html"
+layout: main
+eleventyComputed:
+  title: "{{category}}"
+---
+
+<div class = "categoryLayout">
+	{% assign posts = collections.post | filterByCategory: category %}
+	<div class = "categoryBanner">
+		<img src = "/images/banner.png">
+		<div class = "categoryHeader">
+			<h2>{{category}}</h3>
+		</div>
+	</div>
+
+	<div class = "archiveLayout">
+		<div class = "postit">
+			<img src = "/images/postit.png">
+			<div class = "tags">
+				<h3 class = "headers">sort by tag:</h3>
+				<p>
+					{% for category in collections.categories %}
+						✮ <a class = "clickable1" href = "/categories/{{category | slugify}}">{{category}}</a>
+						</br>
+					{% endfor %}
+				</p>
+			</div>
+		</div>
+		<div class = "catBody">
+			{% for post in posts reversed %}	
+				<p class = "clickable2">		
+					<a href = "{{post.url}}"> {{post.data.title}} - {{post.date | niceDate}}</a></br>
+				</p>
+			{% endfor %}
+		</div>
+	</div>
+</div>

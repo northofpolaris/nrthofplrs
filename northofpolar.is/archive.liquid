@@ -1,0 +1,37 @@
+---
+title: ye olde archive
+layout: main
+---
+
+{% assign yearTab = 3939 %}
+
+<div class = "archiveLayout">
+	<div>
+		<div class = "postit">
+			<img src = "/images/postit.png">
+			
+			<div class = "tags">
+				<h3 class = "headers"> sort by tag: </h3>
+				<p>
+					{% for category in collections.categories %}
+						✮ <a class = "clickable1" href = "/categories/{{category | slugify}}">{{category}}</a>
+						</br>
+					{% endfor %}
+				</p>
+			</div>
+
+		</div>
+	</div>
+	<div class = "main">
+		{% for post in collections.post reversed %}
+			{% assign newYear = post.date | date: "%Y" %}
+				{% if newYear < yearTab %}
+					<h3 class = "recentHeader">{{ post.date | date: "%Y" }} ⋆｡°✩</h3>
+				{% endif %}
+				<p class = "clickable2">
+					<a href="{{post.url}}">{{ post.data.title }} - {{ post.date | niceDate }}</a><br/>
+				</p>	
+			{% assign yearTab = newYear %}
+		{% endfor %}
+	</div>
+</div>

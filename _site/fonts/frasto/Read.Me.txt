@@ -1,0 +1,24 @@
+
+	[ Frästø ]
+
+	A font created by the < Beskrajnost > project.
+	[c] 2007 - Goksel Goktas & Ozan Sener.
+
+	Beskrajnost Project : http://beskrajnost.com
+	Frästø's Repository : http://kodeks.beskrajnost.com/Frasto
+
+	No rights reserved except when used for commercial purposes, proper credits
+	to the authors MUST be given. Also this doesn't mean that you can come up
+	with something like "I've created this font.", because you didn't!
+
+	Installation :
+		* Windows
+			Just copy the Frasto.fon file to your C:\Windows\Fonts directory
+			and it should be available within the software that supports
+			fixed-width (monospace) fonts.
+
+		* Linux
+			Copy the Frasto.pcf.gz to your distro's font directory and then
+			update your font-cache with the proper monkey coding.
+
+	Hope you like it.

@@ -1,0 +1,23 @@
+---
+layout: main
+---
+
+<div class = "posts">
+
+<p>
+		<b>shared: </b> {{ date | niceDate }}<br/>	
+		<b>under: </b>
+	
+		{% for miku in categories %}
+			<a class = "clickable2" href="/categories/{{ miku | slugify }}">
+				{{ miku }}
+			</a>
+		{% unless forloop.last %},	 
+		{% endunless %}
+		{% endfor %}
+	</p>
+
+	<h3 class = "headers">{{title}}</h3>
+
+	{{ content }}
+</div>

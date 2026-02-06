@@ -1,0 +1,61 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>North of Polaris</title>
+  <subtitle>my things</subtitle>
+  <link href="https://northofpolar.is/feed.xml" rel="self"/>
+  <link href="https://northofpolar.is/"/>
+  <updated>2026-01-30T12:00:00Z</updated>
+  <id>https://northofpolar.is/</id>
+  <author>
+    <name>Polaris</name>
+    <email>northofpolaris@proton.me</email>
+  </author>
+  
+  <entry>
+    <title>coding is hard and sleepless nights</title>
+    <link href="https://northofpolar.is/posts/2026/jan/30/"/>
+    <updated>2026-01-30T12:00:00Z</updated>
+    <id>https://northofpolar.is/posts/2026/jan/30/</id>
+    <content type="html">&lt;p&gt;Hi again, it&#39;s your disfunctional webmaster. It has come to my attention that programming is a skill that decays very quickly, and also that working in html is fairly limiting. There were a few things I set out to do this week, and while I knew that they would be difficult to accomplish for someone of my skill level, I had no idea that the most frustrating thing would be learning that ... I need to relearn an entirely new language to accomplish most items on my to-do list. Yes, yes, that language is javascript, and it unfortunately seems like it holds the key for the elements I wish to implement. My husband is quite excited to be able to teach me something new. I am quite daunted with the scope of this website. But hey, little steps, right?&lt;/p&gt;
+&lt;p&gt;Being optimistic, there are a few things that I did end up accomplishing:&lt;/p&gt;
+&lt;p&gt;a) I found out how to call a short list of most recent blogs to my homepage! I had been trying to figure it out for a few days. This process involved messing around with a few filters, realizing the filters didn&#39;t work the way I wanted them to, raging about the fact that the filters did not work the way I wanted them to, briefly contemplating if using liquid as a template file was worth it, looking at nunjucks as an alternative, then finally realizing that filters can&#39;t fix everything. An if statement was all that was necessary. [This has re-established my understanding of how long it will take to actually have a fully working website].&lt;/p&gt;
+&lt;p&gt;b) I wanted to organize my archives page by year, and I&#39;ll call this one like 75% of a success. I really wanted to make use of the &amp;quot;details&amp;quot; tag in html to have small dropdowns of blogs by year. I could not accomplish this. My husband told me that it was a limitation of html itself, and my ego is choosing to believe him. If you haven&#39;t figured it out yet, this is where I realized that I could not avoid relearning JS.&lt;/p&gt;
+&lt;p&gt;c) I found out why my dates were fucky. I&#39;m using a built-in object in javascript called Intl.DateTimeFormat, which essentially takes the dates as I noted them in my markdown files and displays them nicely on all of my posts. Allegedly. The problem I was running into involved the browser putting the day before&#39;s date instead of the actual posted date. Why? Blahblahblah some browser assumptions about the actual time I was posting at, which reverted the date value to the previous day or something. I fixed it by brute forcing it and adding &amp;quot;T12:00:00Z&amp;quot; to the end of all my date tags so that the browser reads it as the correct date. Is this actually solving the problem? My laziness says yes for the moment. Maybe I&#39;ll form a more sophisticated solution later on.&lt;/p&gt;
+&lt;p&gt;Some things I want to accomplish in the future:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a css stylesheet!&lt;/li&gt;
+&lt;li&gt;making my own font!&lt;/li&gt;
+&lt;li&gt;programming cool interactables like draggable windows&lt;/li&gt;
+&lt;li&gt;and uh...more stuff idk&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Anyways, I&#39;m gonna go to bed.&lt;/p&gt;
+&lt;p&gt;gootbye for meow,&lt;/p&gt;
+&lt;p&gt;v ⋆｡°✩&lt;/p&gt;
+&lt;p&gt;ps: here&#39;s where we&#39;re at with the blog [mayhaps I&#39;ll make a full update timeline somewhere when I&#39;m done]&lt;/p&gt;
+&lt;p&gt;✩&lt;img class=&quot;imgFill&quot; src=&quot;https://northofpolar.is/images/chsn.png&quot; width=&quot;750&quot; /&gt;✩&lt;/p&gt;
+</content>
+  </entry>
+  
+  <entry>
+    <title>howdy :3</title>
+    <link href="https://northofpolar.is/posts/2026/jan/welcome/"/>
+    <updated>2026-01-25T17:00:00Z</updated>
+    <id>https://northofpolar.is/posts/2026/jan/welcome/</id>
+    <content type="html">&lt;p&gt;hoi and welcome to my blog!&lt;/p&gt;
+&lt;p&gt;I am pretty excited to finally get this thing running, even though I have literally the most basic format ever right meow. I got the idea to start up this blog from my good friends &lt;a class=&quot;clickable3&quot; target=&quot;_blank&quot; href=&quot;https://taxidermycact.us/&quot;&gt;TaxidermyCactus&lt;/a&gt; and &lt;a class=&quot;clickable3&quot; target=&quot;_blank&quot; href=&quot;https://random.dog/&quot;&gt;kekley&lt;/a&gt;, who both, like me, have become increasingly disillusioned by bigtechTM and the &amp;quot;new internet&amp;quot; in general. We share a love of creativity - both physical and digital - and I am very grateful for their guidance on this project I have undertaken.&lt;/p&gt;
+&lt;p&gt;First things first, the original skeleton of this blogsite was made following this very helpful &lt;a class=&quot;clickable3&quot; target=&quot;_blank&quot; href=&quot;https://cfjedimaster.github.io/eleventy-blog-guide/guide.html&quot;&gt;guide&lt;/a&gt;. I briefly learned some very basic html and css in my senior of highschool - which also happens to have been almost eight years ago at this point in time. So, while the coding itself is not entirely unfamiliar to me, I guess you could pretty accurately call me rusty (and unc (and chopped (chunc))).&lt;/p&gt;
+&lt;p&gt;I have a few visions in mind for what I want this blog to eventually look like. There are a few neocities blogs I browsed and found some inspiration from. Here they are listed below:&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;clickable3&quot; target=&quot;_blank&quot; href=&quot;https://i-land.online/travel&quot;&gt;i-land&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;clickable3&quot; target=&quot;_blank&quot; href=&quot;https://two-reeler.com/&quot;&gt;two-wheeler&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;clickable3&quot; target=&quot;_blank&quot; href=&quot;https://bearsjunkjournal.neocities.org/&quot;&gt;bearsjunkjournal&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I would like to have a nice journalistic feel to the blog eventually, but I understand that this will probably take some time to figure out. As such, it&#39;s fairly likely that you, dear reader, will see this post much after its initial creation. I&#39;ll eventually like to have some tabs that showcase a large range of creations: music, art (3d and 2d), videogames. I&#39;ll also like to keep a general log of my education journey (maybe some other nontraditional student will find comfort in all my failures and eventual successes).&lt;/p&gt;
+&lt;p&gt;Right now, I&#39;m listening to Welcome to Nightvale. If you haven&#39;t given it a listen yet, please do.&lt;/p&gt;
+&lt;p&gt;gootbye for meow,&lt;/p&gt;
+&lt;p&gt;v ⋆｡°✩&lt;/p&gt;
+&lt;p&gt;ps: here&#39;s how the blog looks at this moment in time!&lt;/p&gt;
+&lt;p&gt;✩&lt;img class=&quot;imgFill&quot; src=&quot;https://northofpolar.is/images/update1.png&quot; /&gt;✩&lt;/p&gt;
+</content>
+  </entry>
+</feed>

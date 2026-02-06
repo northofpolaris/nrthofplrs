@@ -1,0 +1,63 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href = "/css/miku.css" rel = "stylesheet">
+
+		<title>coding is hard and sleepless nights</title>
+		<h1 style = "text-align:center">North of Polaris</h1>
+	</head>	
+
+	<nav>
+		<ul>
+			<li class = "star"><a href = "/"><img src="/images/navStarWelcome.png"></a></li>
+			<li class = "star"><a href = "/about"><img src="/images/navStarAbout.png"></a></li>
+		</ul>
+	</nav>
+	</br>
+	<body>	
+
+		
+<div class = "posts">
+
+<p>
+		<b>shared: </b> 1/30/2026<br/>	
+		<b>under: </b>
+	
+		
+			<a class = "clickable2" href="/categories/blog-updates">
+				blog updates
+			</a>
+		
+		
+	</p>
+
+	<h3 class = "headers">coding is hard and sleepless nights</h3>
+
+	<p>Hi again, it's your disfunctional webmaster. It has come to my attention that programming is a skill that decays very quickly, and also that working in html is fairly limiting. There were a few things I set out to do this week, and while I knew that they would be difficult to accomplish for someone of my skill level, I had no idea that the most frustrating thing would be learning that ... I need to relearn an entirely new language to accomplish most items on my to-do list. Yes, yes, that language is javascript, and it unfortunately seems like it holds the key for the elements I wish to implement. My husband is quite excited to be able to teach me something new. I am quite daunted with the scope of this website. But hey, little steps, right?</p>
+<p>Being optimistic, there are a few things that I did end up accomplishing:</p>
+<p>a) I found out how to call a short list of most recent blogs to my homepage! I had been trying to figure it out for a few days. This process involved messing around with a few filters, realizing the filters didn't work the way I wanted them to, raging about the fact that the filters did not work the way I wanted them to, briefly contemplating if using liquid as a template file was worth it, looking at nunjucks as an alternative, then finally realizing that filters can't fix everything. An if statement was all that was necessary. [This has re-established my understanding of how long it will take to actually have a fully working website].</p>
+<p>b) I wanted to organize my archives page by year, and I'll call this one like 75% of a success. I really wanted to make use of the &quot;details&quot; tag in html to have small dropdowns of blogs by year. I could not accomplish this. My husband told me that it was a limitation of html itself, and my ego is choosing to believe him. If you haven't figured it out yet, this is where I realized that I could not avoid relearning JS.</p>
+<p>c) I found out why my dates were fucky. I'm using a built-in object in javascript called Intl.DateTimeFormat, which essentially takes the dates as I noted them in my markdown files and displays them nicely on all of my posts. Allegedly. The problem I was running into involved the browser putting the day before's date instead of the actual posted date. Why? Blahblahblah some browser assumptions about the actual time I was posting at, which reverted the date value to the previous day or something. I fixed it by brute forcing it and adding &quot;T12:00:00Z&quot; to the end of all my date tags so that the browser reads it as the correct date. Is this actually solving the problem? My laziness says yes for the moment. Maybe I'll form a more sophisticated solution later on.</p>
+<p>Some things I want to accomplish in the future:</p>
+<ul>
+<li>a css stylesheet!</li>
+<li>making my own font!</li>
+<li>programming cool interactables like draggable windows</li>
+<li>and uh...more stuff idk</li>
+</ul>
+<p>Anyways, I'm gonna go to bed.</p>
+<p>gootbye for meow,</p>
+<p>v ⋆｡°✩</p>
+<p>ps: here's where we're at with the blog [mayhaps I'll make a full update timeline somewhere when I'm done]</p>
+<p>✩<img class = "imgFill" src="/images/chsn.png" width="750"/>✩</p>
+
+</div>
+
+	
+	</body>
+</html>

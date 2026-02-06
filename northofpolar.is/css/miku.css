@@ -1,0 +1,245 @@
+@font-face {
+	font-family: HoneyBrown;
+	src: url(/fonts/Honey_Brown.otf);
+}
+
+@font-face {
+	font-family: Alagard;
+	src: url(/fonts/alagard.ttf);
+}
+
+@font-face {
+	font-family: Gahiboe;
+	src: url(/fonts/Gahiboe.ttf);
+}
+
+@font-face {
+	font-family: Rascal;
+	src: url(/fonts/RASCAL__.TTF);
+}
+
+@font-face {
+	font-family: Floozy;
+	src: url(/fonts/Floozy__.ttf);
+}
+
+h1:hover, h1:active{
+	letter-spacing: 9px;
+}
+
+h1{
+	font-family: Rascal;
+}
+
+body {	
+	margin: 50px;
+	background-image: url('/images/snail.jpg');
+	background-size: 2000px
+	background-repeat: no-repeat;
+	font-family: HoneyBrown;
+	font-size: 1.2em;
+	color: #4F3C3A;
+	line-height: 1.5;
+}
+
+.main {
+	max-width: 700px;
+	min-width: 300px;
+	max-height: 50vh;
+	padding: 30px;
+	background-image: url('/images/notebook.png');
+	background-size: 725px;
+	overflow:scroll;
+	order: 2;
+	flex: 5;
+}
+
+.posts {
+	max-width: 100%;
+	max-height: 1400px;
+	padding: 30px;
+	background-image: url('/images/notebook.png');
+	background-size: 725px;
+	overflow:scroll;
+	img{
+		max-width: 75%;
+	}
+}
+
+.sidebarRight {
+	max-width: 200px;
+	order: 3;
+	flex: auto;
+	display: grid;
+	gap: 10px;
+}
+
+.sidebarLeft {
+	max-width: 200px;
+	max-height: 500px;
+	padding: 20px;
+	order: 1;
+	flex: auto;
+	overflow: scroll;
+	img {
+		width: 195px;
+	}
+}
+
+.homeLayout {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: flex-start;
+	justify-content: center;
+	gap: 30px;
+}
+
+.archiveLayout {
+	display: flex;
+	flex-flow: row wrap;
+	align-content: flex-start;
+	justify-content: center;
+	gap: 30px;
+}
+
+.categoryLayout {
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	gap: 10px;
+}
+
+.categoryBanner {
+	position: relative;
+	img{
+		max-height: 125px;
+	}
+}
+
+.categoryHeader {
+	position: absolute;
+	top: 20px;
+	left: 60px;
+	h2{
+		font-family: Floozy;
+		letter-spacing: 4px;
+	}
+}
+
+.catBody {
+	width: 700px;
+	max-height: 50vh;
+	padding: 30px;
+	background-image: url('/images/notebook.png');
+	background-size: 725px;
+	overflow:scroll;
+	order: 2;
+	flex: 5;
+}
+
+.postit {
+	position: relative;
+	width: auto;
+	height: auto;
+}
+.tags {
+	position: absolute;
+	top: 25px;
+	left: 15px;
+	max-width: 180px;
+	max-height: 160px;
+	transform: rotate(-3deg);
+	overflow: scroll;
+	scrollbar-width: 2px;
+	flex: auto;
+}
+
+.currentlyX {
+	display: grid;
+	grid-template-columns: auto auto auto; 
+}
+
+.purple {
+	background-color: hsla(264,22%,41%,0.75);
+	border-radius: 10px;
+	border: 2px dotted #2B203B;
+	padding: 15px;
+	h3 {
+		color:#2B203B;
+	}
+	img {
+		border: 1px solid #2B203B;
+	}
+}
+
+.imgFill {
+	width: 100%;
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+	color: #244569;
+}
+
+summary::marker {
+	content: url('/images/teacup.png');
+}
+
+nav {
+	position: relative;
+	left: 15vw;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+ul li {
+	float: left;
+}
+
+ul li a {
+	padding: 10px;
+}
+
+.star:hover {
+	transform: rotate(10deg);
+}
+
+.headers {
+	font-family: Alagard;
+}
+
+.recentHeader {
+	font-family: Alagard;
+	position: sticky;
+	top: 0;
+	background-color: #E4D6D3
+}
+
+.clickable1:hover {
+	text-transform: uppercase;
+}
+
+.clickable2:hover {
+	font-weight: 900;
+}
+
+.clickable3:hover {
+	text-decoration-line: underline;
+	text-decoration-style: wavy;
+	text-decoration-color: #35679C;
+}
+
+.currently {
+	transform: rotate(8deg);
+	height: 125px;
+}
+
+.currently:hover {
+	transform: rotate(3deg);
+}
