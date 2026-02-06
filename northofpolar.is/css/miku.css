@@ -23,7 +23,7 @@
 	src: url(/fonts/Floozy__.ttf);
 }
 
-h1:hover, h1:active{
+.head:hover, .head:active{
 	letter-spacing: 9px;
 }
 
